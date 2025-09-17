@@ -1,0 +1,153 @@
+/* ----- Global Resets & Base ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #1e90ff;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #4db8ff;
+}
+
+/* ----- Top & Bottom Bars ----- */
+.navbar, .footerbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: #1e1e1e;
+}
+
+.nav-link {
+  color: #f1f1f1;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-link:hover {
+  background-color: #333;
+  color: #4db8ff;
+}
+
+/* ----- Header ----- */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #4db8ff 0%, #1e90ff 100%);
+  color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  max-width: 650px;
+  margin: 0.5rem auto;
+  font-size: 1.05rem;
+}
+
+/* ----- Main Content ----- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.section-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.section-card.alt {
+  background: #f0f8ff;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+/* Lists & Checkboxes */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #1e90ff;
+  cursor: pointer;
+}
+
+/* Details */
+details {
+  margin-top: 0.5rem;
+  margin-left: 1.6rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #1e90ff;
+  list-style: none;
+}
+details[open] summary::after {
+  content: "▲";
+  float: right;
+}
+details summary::after {
+  content: "▼";
+  float: right;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
