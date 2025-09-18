@@ -1,5 +1,8 @@
 body {
-    font-family: "Lucida Handwriting Std", cursive;          
+    font-family: "Lucida Handwriting Std", cursive;
+    margin: 0;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 69, 69), orange, yellow, pink, rgb(170, 0, 170));
 }
 
 /* body {
@@ -9,38 +12,26 @@ body {
 
 h1 {
     font-size: 75px;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: "Lucida Bright", serif; */
     font-weight: 1000;
     text-align: center;
 }
 
 h2 {
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif; 
+    /* font-family: Arial, Helvetica, sans-serif;  */
     text-decoration: underline;
 }
 
 h3 {
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 p {
     font-size: 20px;
     padding: 0px 20px;
-    font: menu;
-}
-
-li {
-    font-size: 20px;
-}
-
-summary {
-    font-style: italic;
-}
-
-summary:hover {
-    color:#6eb0e9
+    /* font: menu; */
 }
 
 img {
@@ -66,9 +57,62 @@ iframe {
     margin: auto;
 }
 
+.grid_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .content_div {
-    margin: 15px;
-    padding-bottom: 10px;
+    width: 500px;
+    background-color: rgba(186, 186, 186, 0.436);
+    border-style:dotted;
+    border-color: black;
+    border-radius: 20px;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 30px 50px 30px;
+    animation: bubble1 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: background-color 1s;
+}
+
+.content_div:hover {
+    background-color: rgba(96, 96, 96, 0.436);
+    transition: background-color 1s;
+}
+
+.colored_div {
+    width: 500px;
+    background-color: rgba(186, 186, 186, 0.436);
+    border-style:dotted;
+    border-color: black;
+    border-radius: 20px;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 30px 50px 30px;
+    animation: bubble2 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+    transition: background-color 1s;
+}
+
+.colored_div:hover {
+    background-color: rgba(96, 96, 96, 0.436);
+    transition: background-color 1s;
+}
+
+@keyframes bubble1 {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bubble2 {
+  0% { transform: scale(1.02); }
+  50% { transform: scale(1); }
+  100% { transform: scale(1.02); }
 }
 
 .middle_text {
@@ -77,26 +121,35 @@ iframe {
     padding-right: 100px;
 }
 
-.center_header {
+.center_head {
     font-size: 40px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-.colored_div {
-    background-color: #3878e7bf;
-    padding-top: 15px;
-    padding-bottom: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
+.top_bar {
+    background: linear-gradient(to right, rgb(255, 0, 0) , rgb(255, 162, 0));
+    width: 100%;
+    height: 60px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.top_bar {
-    background-color: rgb(0, 40, 150);
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
+.page_link_div {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.toggle_div {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .top_bar_links {
@@ -112,8 +165,17 @@ iframe {
     color: #aaccea;
 }
 
+.toggle_button {
+    font-size: 15px;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
 .bottom_bar {
-    background-color: rgb(0, 40, 150);
+    background-image: linear-gradient(to right, rgb(251, 0, 251) , rgb(123, 0, 189));
     width: 100%;
     height: 100%;
     padding: 20px 0;

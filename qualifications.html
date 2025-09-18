@@ -5,29 +5,37 @@
         <link rel="stylesheet" type="text/css" href="professional.css" id="page_style"></link>
     </head>
     <body>
-        <!-- <script src="toggle.js"></script> -->
+        <script src="toggle.js"></script>
         <div class="top_bar">
-            <a href="index.html" class="top_bar_links">Home</a>
-            <a href="portfolio.html" class="top_bar_links">Portfolio</a>
-            <a href="qualifications.html" class="top_bar_links">Qualifications</a>
-            <a href="service.html" class="top_bar_links">Service</a>
-            <a href="hobbies.html" class="top_bar_links">Hobbies</a>
-            <a href="bucket_list.html" class="top_bar_links">AI-Generated Bucket List</a>
-            <button type="button" onclick="professional_style()">Professional Style</button>
-            <button type="button" onclick="sunset_style()">Sunset Style</button>
+            <div class="page_link_div">
+                <a href="index.html" class="top_bar_links">Home</a>
+                <a href="portfolio.html" class="top_bar_links">Portfolio</a>
+                <a href="qualifications.html" class="top_bar_links">Qualifications</a>
+                <a href="service.html" class="top_bar_links">Service</a>
+                <a href="hobbies.html" class="top_bar_links">Hobbies</a>
+                <a href="bucket_list.html" class="top_bar_links">AI-Generated Bucket List</a>
+            </div>
+            <div>
+                <button type="button" onclick="professional_style()" class="toggle_button">Professional Style</button>
+                <button type="button" onclick="sunset_style()" class="toggle_button">Sunset Style</button>
+            </div>
         </div>
         <h1>Qualifications</h1>
-        <div class="content_div">
-            <h4 class="center_header">Resume</h4>
-            <iframe src="images/my_resume.pdf" title="Resume" width="500" height="700"></iframe>
+        <div class="grid_div">
+            <div class="content_div">
+                <h4 class="center_head">Resume</h4>
+                <iframe src="images/my_resume.pdf" title="Resume" width="500" height="700"></iframe>
+            </div>
         </div>
-        <div class="colored_div">
-            <h3>Interests</h3>
-            <p>My current interests within the realms of technology include software engineering as well as data analysis. Software engineering combines both creativity and problem solving, two outlets of expression that I find entertaining and intriguing. As someone that likes numbers, data analysis piques my interest as not only working with large data sets, but manipulating and transforming them to discover underlying patterns.</p>
-        </div>
-        <div class="content_div">
-            <h3>Skills</h3>
-            <p>When it comes to programming languages, I am proficient in C++, Java, Python, R, and Javascript. As for the linguistic languages I know, I can speak Mandarin fluently in addition to English. Additionally, I have worked with Node.js, React, Flask, and the JavaFX technologies. Not only that, I am a problem solver, good communicator, cooperative, and aim to maintain friendly relationships with all that I meet. That being said, I still believe there are and will continue to be many avenues in which I can continue grow in to not only better myself as a developer, but as a person overall.</p>
+        <div class="grid_div">
+            <div class="colored_div">
+                <h3>Interests</h3>
+                <p>My current interests within the realms of technology include software engineering as well as data analysis. Software engineering combines both creativity and problem solving, two outlets of expression that I find entertaining and intriguing. As someone that likes numbers, data analysis piques my interest as not only working with large data sets, but manipulating and transforming them to discover underlying patterns.</p>
+            </div>
+            <div class="content_div">
+                <h3>Skills</h3>
+                <p>When it comes to programming languages, I am proficient in C++, Java, Python, R, and Javascript. As for the linguistic languages I know, I can speak Mandarin fluently in addition to English. Additionally, I have worked with Node.js, React, Flask, and the JavaFX technologies. Not only that, I am a problem solver, good communicator, cooperative, and aim to maintain friendly relationships with all that I meet. That being said, I still believe there are and will continue to be many avenues in which I can continue grow in to not only better myself as a developer, but as a person overall.</p>
+            </div>
         </div>
         <div class="bottom_bar">
             <a href="https://www.instagram.com/harry.pineapples/?hl=zh-cn" class="top_bar_links">Instagram</a>

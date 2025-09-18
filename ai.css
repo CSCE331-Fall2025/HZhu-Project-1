@@ -75,13 +75,14 @@ main {
 }
 
 .section-card {
-  background: black;
+  background: #fff;
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .section-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
