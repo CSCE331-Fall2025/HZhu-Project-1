@@ -1,21 +1,13 @@
-// function professional_style() {
-//     document.getElementById('page_style').setAttribute("href", "professional.css");
-// }
-
-// function sunset_style() {
-//     document.getElementById('page_style').setAttribute("href", "sunset.css");
-// }
-
 function load_style() {
     page_style = localStorage.getItem("page_stylesheet_name");
     if (page_style === null) {
-        page_style = "professional.css";
+        page_style = "blue.css";
     }
     document.getElementById('page_style').setAttribute("href", page_style);
 }
 
-function professional_style() {
-    localStorage.setItem("page_stylesheet_name", "professional.css");
+function blue_style() {
+    localStorage.setItem("page_stylesheet_name", "blue.css");
     load_style();
 }
 
@@ -23,14 +15,5 @@ function sunset_style() {
     localStorage.setItem("page_stylesheet_name", "sunset.css");
     load_style();
 }
-
-// function load_style() {
-//     page_style = localStorage.getItem("page_stylesheet_name");
-//     if (page_style === null) {
-//         page_style = "professional.css";
-//     }
-//     page_style = null;
-//     document.getElementById('page_style').setAttribute("href", page_style);
-// }
 
 load_style() // load style immediately

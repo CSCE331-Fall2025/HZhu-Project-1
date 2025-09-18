@@ -38,6 +38,12 @@ img {
     border-radius: 20px;
     display: block;
     margin: auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    object-fit: cover; 
 }
 
 .round_img {
