@@ -1,7 +1,6 @@
 body {
     background-color: white;
     margin: 0;
-    font: menu;
 }
 
 h1 {
@@ -25,6 +24,7 @@ h3 {
 p {
     font-size: 20px;
     padding: 0px 20px;
+    font: menu;
 }
 
 li {
@@ -57,10 +57,6 @@ button {
     margin: auto;
 }
 
-button:hover {
-    background-color: #6eb0e9;
-}
-
 iframe {
     display: block;
     margin: auto;
@@ -69,6 +65,19 @@ iframe {
 .content_div {
     margin: 15px;
     padding-bottom: 10px;
+}
+
+.middle_text {
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.center_header {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 .colored_div {

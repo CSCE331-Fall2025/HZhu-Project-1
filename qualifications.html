@@ -2,22 +2,24 @@
 <html>
     <head>
         <title>Qualifications</title>
-        <link rel="stylesheet" type="text/css" href="professional.css"></link>
+        <link rel="stylesheet" type="text/css" href="professional.css" id="page_style"></link>
     </head>
-    <div class="top_bar">
-        <a href="index.html" class="top_bar_links">Home</a>
-        <a href="portfolio.html" class="top_bar_links">Portfolio</a>
-        <a href="qualifications.html" class="top_bar_links">Qualifications</a>
-        <a href="service.html" class="top_bar_links">Service</a>
-        <a href="hobbies.html" class="top_bar_links">Hobbies</a>
-        <a href="bucket_list.html" class="top_bar_links">AI-Generated Bucket List</a>
-    </div>
     <body>
+        <!-- <script src="toggle.js"></script> -->
+        <div class="top_bar">
+            <a href="index.html" class="top_bar_links">Home</a>
+            <a href="portfolio.html" class="top_bar_links">Portfolio</a>
+            <a href="qualifications.html" class="top_bar_links">Qualifications</a>
+            <a href="service.html" class="top_bar_links">Service</a>
+            <a href="hobbies.html" class="top_bar_links">Hobbies</a>
+            <a href="bucket_list.html" class="top_bar_links">AI-Generated Bucket List</a>
+            <button type="button" onclick="professional_style()">Professional Style</button>
+            <button type="button" onclick="sunset_style()">Sunset Style</button>
+        </div>
         <h1>Qualifications</h1>
-        <div class="content_div" style="padding-bottom: 30px;">
-            <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; text-decoration: underline;">Resume</h3>
+        <div class="content_div">
+            <h4 class="center_header">Resume</h4>
             <iframe src="images/my_resume.pdf" title="Resume" width="500" height="700"></iframe>
-            <button>Download as PDF</button>
         </div>
         <div class="colored_div">
             <h3>Interests</h3>
